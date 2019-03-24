@@ -7,6 +7,8 @@ import { HomeComponent } from './components/home/home.component';
 import { InscripcionComponent } from './components/inscripcion/inscripcion.component';
 import {MatFormFieldModule,MatInputModule, MatCardModule, MatButtonModule} from '@angular/material'; 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RegistroService } from './services/registro.service';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,10 +23,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     MatCardModule,
     FlexLayoutModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule
     
   ],
-  providers: [],
+  providers: [RegistroService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
