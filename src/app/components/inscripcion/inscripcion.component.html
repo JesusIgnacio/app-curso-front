@@ -1,24 +1,42 @@
-<h2>
-  Registro de Alumnos
-</h2>
-<div class="mat-app-background basic-container">
-  <div class="example-container">
-    <mat-form-field>
-      <input matInput placeholder="Nombre">
-    </mat-form-field>
-
-    <mat-form-field>
-      <input matInput placeholder="Telefono">
-    </mat-form-field>
-
-    <mat-form-field>
-      <input matInput placeholder="Email">
-    </mat-form-field>
-
-    <mat-form-field>
-      <input matInput placeholder="RUT">
-    </mat-form-field>
+<mat-card >
     
-    <button mat-button>Inscribirse</button>
+<div fxFlex fxLayout="column" fxLayoutGap="10px" style="height: 100vh"
+class="mat-app-background basic-container">
+<h2>Inscripcion</h2>
+    <div fxLayout="row wrap" class="container">
+      <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100"
+        fxLayout="column" style="padding: 5px;">
+        <mat-card class="mat-elevation-z1">
+            <mat-form-field>
+                <input matInput placeholder="Nombre">
+            </mat-form-field>
+        </mat-card>
+      </div>
+      <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100"
+        fxLayout="column" style="padding: 5px;">
+        <mat-card class="mat-elevation-z1">
+            <mat-form-field>
+                <input matInput placeholder="Telefono">
+            </mat-form-field>
+        </mat-card>
+      </div>
+      <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100"
+        fxLayout="column" style="padding: 5px;">
+        <mat-card class="mat-elevation-z1">
+            <mat-form-field>
+                <input matInput placeholder="Email">
+            </mat-form-field>
+        </mat-card>
+      </div>
+      <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100"
+        fxLayout="column" style="padding: 5px;">
+        <mat-card class="mat-elevation-z1">
+            <mat-form-field>
+                <input matInput placeholder="RUT">
+            </mat-form-field>
+        </mat-card>
+      </div>
+    </div>
+    <button mat-raised-button>Inscribirse</button>
   </div>
-</div>
+</mat-card>
