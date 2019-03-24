@@ -15,7 +15,7 @@ export class InscripcionComponent {
     console.log(this.inscripcion);
     this.registroService.registrarInscripcion(this.inscripcion)
 
-  //   //.timeout(3000, new Error('timeout exceeded'))
+     //.timeout(3000, new Error('timeout exceeded'))
      .subscribe(
        data =>  data,
        error => console.debug('ERROR', error),
